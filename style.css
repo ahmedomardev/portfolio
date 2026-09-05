@@ -1,0 +1,8 @@
+body {
+  background-color: #e0f2f1;
+}
+
+.gallery-img {
+  height: 160px;
+  object-fit: cover;
+}
