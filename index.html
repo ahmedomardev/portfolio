@@ -1,74 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ahmed Omar</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ahmed Omar | Software Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <header>
-        <strong>Ahmed Omar</strong>
-        <nav>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
-    <main>
-        <section class="main">
-            <h1>Software Developer</h1>
-            <p>Building lightweight, secure, and modern projects since 2022.</p>
-            <a href="#projects" class="btn">View My Work</a>
-        </section>
-        <section id="skills" class="container">
-            <h2>Skills</h2>
-            <div class="skills">
-                <h4>HTML5 & CSS3</h4>
-                <h4>JavaScript</h4>
-                <h4>C# / .NET</h4>
-                <h4>Python</h4>
-                <h4>Git & GitHub</h4>
-                <h4>Cryptography</h4>
-            </div>
-        </section>
-        <section id="projects" class="container">
-            <h2>Featured Projects</h2>
-            <div class="projects">
-                <article class="card">
-                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600" alt="EcoBrowser">
-                    <div>
-                        <h3>EcoBrowser</h3>
-                        <p>Lightweight C# WebView2 browser with built-in ad blocking.</p>
-                    </div>
-                </article>
-                <article class="card">
-                    <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=600" alt="FTPChat">
-                    <div>
-                        <h3>FTPChat</h3>
-                        <p>End-to-end encrypted messaging over FTP/SFTP servers.</p>
-                    </div>
-                </article>
-                <article class="card">
-                    <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=600" alt="Tlock">
-                    <div>
-                        <h3>Tlock</h3>
-                        <p>Desktop encryption suite protecting source code and containers.</p>
-                    </div>
-                </article>
-            </div>
-        </section>
-        <section id="contact" class="container contact">
-            <h2>Contact</h2>
-            <p>Have a project or question?</p>
-            <a href="mailto:ahmedomardev@outlook.com">ahmedomardev@outlook.com</a>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2026 Ahmed Omar. All rights reserved.</p>
-    </footer>
-</body>
 
+  <header>
+    <a href="#" class="logo">Ahmed Omar</a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1 class="hero-title">Software Developer</h1>
+        <p class="desc">Building software projects since 2022.</p>
+        <a href="#projects" class="btn">VIEW MY WORK</a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container full-page">
+      <h2>About Me</h2>
+      <div class="box">
+        <p>I build lightweight, secure software, encryption utilities, and desktop tools. <strong>I don't work for anyone or take on client work</strong> I code strictly for personal learning, and to share free tools with the developer community.</p>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="container full-page">
+      <h2>Skills & Technologies</h2>
+      <div class="skills">
+        <span class="skill-item">HTML5 & CSS3</span>
+        <span class="skill-item">VB.Net</span>
+        <span class="skill-item">C#</span>
+        <span class="skill-item">Python</span>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container full-page">
+      <h2>Featured Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800" alt="EcoBrowser">
+          <div class="card-body">
+            <h3>EcoBrowser</h3>
+            <p>Lightweight C# WebView2 browser engine with built-in ad blocking.</p>
+            <div class="tags"><span>C#</span><span>WebView2</span></div>
+            <a href="#" class="link">View Source &rarr;</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800" alt="FTPChat">
+          <div class="card-body">
+            <h3>FTPChat</h3>
+            <p>End-to-end encrypted messaging using remote FTP/SFTP servers as relays.</p>
+            <div class="tags"><span>Python</span><span>Cryptography</span></div>
+            <a href="#" class="link">View Source &rarr;</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800" alt="Tlock">
+          <div class="card-body">
+            <h3>Tlock</h3>
+            <p>Desktop encryption suite protecting source code and isolated containers.</p>
+            <div class="tags"><span>C#</span><span>AES-256</span></div>
+            <a href="#" class="link">View Source &rarr;</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container full-page">
+      <div class="box center">
+        <h2>Contact</h2>
+        <p>Have a question or need help with a project?</p>
+        <a href="mailto:ahmedomardev@outlook.com" class="email-link">ahmedomardev@outlook.com</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Ahmed Omar. Built for performance.</p>
+  </footer>
+
+</body>
 </html>
